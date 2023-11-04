@@ -20,7 +20,6 @@ interface ForecastInfoProps {
 }
 const ForecastInfo: React.FC<ForecastInfoProps> = ({dailyForecast}) => {
   const next5Hours = useNext5HoursForecast(dailyForecast);
-  console.log('next5Hours', next5Hours);
   return (
     <>
       <AppText fontSize={24} fontWeight="bold" {...addTestId('forecast-title')}>

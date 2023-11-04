@@ -9,7 +9,6 @@ function useWeatherData() {
     isLoading,
     isError,
   } = useGetForecastWeatherQuery(city);
-  console.log('weatherData', weatherData);
   const handleSearch = (search: string) => {
     if (search && search.length > 2) {
       setCity(search);
