@@ -22,7 +22,10 @@ const Home = () => {
       <ScrollView
         style={styles.scrollView}
         contentInsetAdjustmentBehavior="automatic">
-        <SearchInput handleTextDebounce={handleTextDebounce} />
+        <SearchInput
+          handleTextDebounce={handleTextDebounce}
+          placeholder="Search by city name"
+        />
 
         {isLoading ? (
           <Row justifyContent="center" alignItems="flex-end" marginTop={20}>
