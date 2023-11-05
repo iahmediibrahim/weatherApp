@@ -26,6 +26,12 @@ Before you begin, ensure you have met the following requirements:
  yarn install
 ```
 
+### Install cocoapods
+
+```
+cd ios && pod install && cd ..
+```
+
 ## Running the App
 
 1. Add your weather API_KEY in ( src/redux/baseQuery/baseQuery.ts )
