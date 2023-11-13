@@ -2,12 +2,8 @@ import {combineReducers} from 'redux';
 import {configureStore} from '@reduxjs/toolkit';
 import {apiService} from '../redux/apiService';
 
-// import counterReducer from './counterSlice';
-
 const rootReducer = combineReducers({
   [apiService.reducerPath]: apiService.reducer,
-  // counter: counterReducer,
-  // Add more reducers here
 });
 
 export const store = configureStore({
